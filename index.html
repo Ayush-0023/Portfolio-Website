@@ -95,13 +95,18 @@
 
             <div class="glass-card">
                 <p>
-                    I strongly believe that true understanding comes from being able to explain concepts clearly. That's
-                    why I regularly document my learning journey publicly, breaking down complex topics into intuitive
-                    explanations while continuously strengthening my own fundamentals.
+                    I strongly believe that true understanding comes from being able to explain concepts clearly and
+                    derive them, not just apply them. Before using a library function, I like to work through the
+                    math behind it — why squared error corresponds to Gaussian noise under MLE, why L1 regularisation
+                    creates sparsity while L2 doesn't, why Random Forest's node-level feature sampling decorrelates
+                    trees more than plain bagging. I keep detailed written notes on everything I study, and I
+                    regularly revisit and rewrite them as my understanding deepens.
                     <br><br>
-                    I'm currently seeking opportunities where I can apply analytical thinking, contribute to data-driven
-                    projects, learn from experienced professionals, and continue developing my skills in working with
-                    data.
+                    Coming from a mechanical engineering and industrial operations background, I bring a habit of
+                    structured problem-solving and comfort working with real operational data — a perspective I
+                    think is genuinely useful in applied ML, not just a detour from it. I'm currently looking for
+                    opportunities where I can apply this foundation to real data-driven problems, work with
+                    experienced engineers, and keep building toward production-grade ML systems.
                 </p>
             </div>
         </div>
@@ -110,53 +115,70 @@
     <section id="skills">
         <h2 class="section-title">Core Skills</h2>
         <p class="section-subtitle">
-            Technical strengths spanning machine learning, MLOps tooling, statistics, and practical data engineering.
+            Technical strengths spanning classical machine learning, model evaluation and tuning, and hands-on
+            MLOps tooling.
         </p>
 
        <div class="skills-grid">
             <div class="skill-card">
-                <h3>Machine Learning</h3>
+                <h3>Regression & Regularisation</h3>
                 <p>
-                    Regression, classification, ensemble methods, model evaluation, and supervised learning pipelines
-                    using Scikit-learn.
+                    Linear, Polynomial, Ridge, Lasso, and ElasticNet regression — including the underlying OLS and
+                    gradient descent derivations, and why L1 induces sparsity while L2 doesn't.
                 </p>
             </div>
 
             <div class="skill-card">
-                <h3>MLOps & Tooling</h3>
+                <h3>Classification Algorithms</h3>
                 <p>
-                    DVC, DVCLive experiment tracking, pipeline automation, AWS S3 artifact versioning, Git/GitHub.
+                    Logistic & Softmax Regression, Naive Bayes, KNN, SVM (linear, polynomial, RBF kernels), and
+                    Decision Trees, with a working understanding of the math behind each.
                 </p>
             </div>
 
             <div class="skill-card">
-                <h3>Statistics & Mathematics</h3>
+                <h3>Ensemble Methods</h3>
                 <p>
-                    Probability theory, hypothesis testing, maximum likelihood estimation, distributions and
-                    mathematical intuition.
+                    Random Forest, AdaBoost, Gradient Boosting, XGBoost, LightGBM, and Voting/Stacking/Blending —
+                    including the bias-variance reasoning behind bagging vs. boosting.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Unsupervised Learning</h3>
+                <p>
+                    K-Means, Hierarchical (Agglomerative) Clustering, DBSCAN, and PCA for dimensionality reduction.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Model Evaluation & Tuning</h3>
+                <p>
+                    Cross-validation (K-Fold, Stratified, Nested), GridSearchCV/RandomizedSearchCV, Optuna, and
+                    metric selection (precision/recall/F1/ROC-AUC) for imbalanced data.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Feature Engineering & Data Prep</h3>
+                <p>
+                    Scaling, encoding, outlier handling, feature selection, and imbalanced-data techniques (SMOTE,
+                    class weighting, balanced ensembles).
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>MLOps & Pipelines</h3>
+                <p>
+                    DVC + DVCLive for data versioning and experiment tracking, Docker for containerisation, AWS S3
+                    for remote artifact storage, and config-driven (YAML) pipeline design.
                 </p>
             </div>
 
             <div class="skill-card">
                 <h3>Python Ecosystem</h3>
                 <p>
-                    Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn — end-to-end data analysis and modelling
-                    workflows.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Data Preprocessing</h3>
-                <p>
-                    Feature engineering, missing value handling, encoding, scaling, and building model-ready
-                    datasets.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Deployment & Apps</h3>
-                <p>
-                    Streamlit app development for model demos, with working knowledge of SQL for data querying.
+                    Pandas, NumPy, Scikit-learn, Matplotlib/Seaborn, structured logging, and SQL for data querying.
                 </p>
             </div>
         </div>
