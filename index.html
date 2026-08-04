@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ayush Anand | Data Science & Machine Learning Portfolio</title>
-    <meta name="description" content="Ayush Anand — Data Science & Machine Learning portfolio. Projects in NLP, MLOps, and predictive modelling, built on a foundation in statistics and first-principles thinking.">
+    <meta name="description"
+        content="Ayush Anand — Data Science & Machine Learning portfolio. Projects in NLP, MLOps, and predictive modelling, built on a foundation in statistics and first-principles thinking.">
     <meta property="og:title" content="Ayush Anand | Data Science & Machine Learning Portfolio">
-    <meta property="og:description" content="Projects in NLP, MLOps, and predictive modelling, built on a foundation in statistics and first-principles thinking.">
+    <meta property="og:description"
+        content="Projects in NLP, MLOps, and predictive modelling, built on a foundation in statistics and first-principles thinking.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,9 +32,9 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
@@ -47,7 +48,7 @@
 
     <section class="hero">
         <div class="hero-text">
-            <h3>Data • Machine Learning • Statistics</h3>
+            <h3>Building ML systems, not just notebooks</h3>
             <h1>Hi, I'm <span>Ayush Anand</span></h1>
 
             <div class="typed-wrapper">
@@ -55,11 +56,11 @@
             </div>
 
             <p>
-                I'm passionate about using data to uncover insights, solve problems, and build intelligent solutions. My
-                approach is rooted in understanding concepts from first principles, combining statistical thinking,
-                analytical problem-solving, and machine learning to tackle real-world challenges. I enjoy documenting
-                everything I learn publicly because explaining ideas clearly is one of the most effective ways to deepen
-                understanding.
+                I build machine learning systems end to end - from understanding the math behind an algorithm to
+                containerising the model that uses it. Most of what I know, I learned by taking things apart from
+                scratch rather than trusting a library to just work. I post what I learn as I go, mainly
+                because trying to explain something clearly is the fastest way to find out what I don't actually
+                understand yet.
             </p>
 
             <div class="hero-buttons">
@@ -72,7 +73,7 @@
             </div>
         </div>
 
-       <div class="profile-card">
+        <div class="profile-card">
             <img src="images/Profile Pic.png" alt="Ayush Anand">
         </div>
     </section>
@@ -83,43 +84,44 @@
         <div class="about-grid">
             <div class="glass-card">
                 <p>
-                    My interest in data began with a curiosity about how meaningful insights can be extracted from
-                    information and transformed into better decisions. Over time, that curiosity evolved into a focused
-                    pursuit of statistics, machine learning, and analytical problem-solving.
+                    I got into data through a fairly ordinary frustration: I could apply a technique correctly and
+                    still not be able to say why it worked, and that bothered me more than it should have. That
+                    turned into a habit of writing detailed notes on everything I study - not summaries, but full
+                    derivations. It's why I can tell you not just that Lasso zeroes out coefficients while Ridge
+                    doesn't, but why - one has λ in the numerator, the other in the denominator.
                     <br><br>
-                    Today, I continue to strengthen my foundation across probability theory, statistical inference, data
-                    analysis, and machine learning. I believe that understanding the reasoning behind methods is just as
-                    important as knowing how to apply them.
+                    I'd rather spend an extra hour understanding why a method works than memorise when to use it -
+                    slower up front, but it's the only way I've found to actually debug a model instead of guessing
+                    at hyperparameters until something improves.
                 </p>
             </div>
 
             <div class="glass-card">
                 <p>
-                    I strongly believe that true understanding comes from being able to explain concepts clearly and
-                    derive them, not just apply them. Before using a library function, I like to work through the
-                    math behind it — why squared error corresponds to Gaussian noise under MLE, why L1 regularisation
-                    creates sparsity while L2 doesn't, why Random Forest's node-level feature sampling decorrelates
-                    trees more than plain bagging. I keep detailed written notes on everything I study, and I
-                    regularly revisit and rewrite them as my understanding deepens.
+                    That habit shows up directly in how I build projects - I tend to document the debugging story,
+                    not just the final metric. On my kidney CT classification project, that meant noticing a model
+                    was unstable at a learning rate of 0.01, systematically dropping it to 0.001, and tracking each
+                    experiment through DVC and MLflow until evaluation accuracy went from 69% to 91%. That process
+                    taught me more than any tutorial could.
                     <br><br>
-                    Coming from a mechanical engineering and industrial operations background, I bring a habit of
-                    structured problem-solving and comfort working with real operational data — a perspective I
-                    think is genuinely useful in applied ML, not just a detour from it. I'm currently looking for
-                    opportunities where I can apply this foundation to real data-driven problems, work with
-                    experienced engineers, and keep building toward production-grade ML systems.
+                    I came into ML from mechanical engineering, including six months running a maintenance team at an
+                    industrial plant - not a typical background for this field, but one that left me comfortable
+                    making decisions from incomplete data under real operational pressure. I'm now looking for a
+                    team where I can keep building toward production ML systems: the kind with a Docker container
+                    and a reproducible pipeline behind them, not just a notebook.
                 </p>
             </div>
         </div>
     </section>
 
     <section id="skills">
-        <h2 class="section-title">Core Skills</h2>
+        <h2 class="section-title">Skills</h2>
         <p class="section-subtitle">
             Technical strengths spanning classical machine learning, model evaluation and tuning, and hands-on
             MLOps tooling.
         </p>
 
-       <div class="skills-grid">
+        <div class="skills-grid">
             <div class="skill-card">
                 <h3>Regression & Regularisation</h3>
                 <p>
@@ -184,75 +186,70 @@
         </div>
     </section>
 
-    <section id="experience">
-        <h2 class="section-title">Experience</h2>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Hindustan Zinc Limited (Vedanta Group)</h3>
-                <span>Graduate Engineer Trainee, Shaft Department • 2025</span>
-                <p>
-                    Coordinated daily work allocation and maintenance planning for a 40-member team across shaft and
-                    hoisting operations. Prepared and presented monthly performance reports to senior management,
-                    tracking KPIs such as ore hoisted (tonnes/day, tonnes/week) against targets. Built departmental
-                    budgets and shutdown/replacement planning for critical machinery, working extensively in Excel
-                    and PowerPoint for data reporting, trend tracking, and forecasting.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2 class="section-title">Education</h2>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Birla Institute of Technology, Mesra</h3>
-                <span>B.Tech in Mechanical Engineering • 2021 – 2025</span>
-                <p>
-                    Ranchi, Jharkhand • CGPA: 7.94 / 10
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>Loyola School</h3>
-                <span>Higher Secondary Education (ISC) • 2020</span>
-                <p>
-                    Jamshedpur, Jharkhand • Percentage: 92%
-                </p>
-            </div>
-
-           <div class="timeline-item">
-                <h3>Loyola School</h3>
-                <span>Secondary Education (ICSE) • 2018</span>
-                <p>
-                    Jamshedpur, Jharkhand • Percentage: 92%
-                </p>
-            </div>
-        </div>
-    </section>
-
     <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title">Projects</h2>
         <p class="section-subtitle">
-            A selection of end-to-end projects spanning MLOps pipelines, NLP, and predictive modelling.
+            A selection of projects spanning deep learning, MLOps pipelines, NLP, and predictive
+            modelling.
         </p>
 
         <div class="projects-grid">
 
-            <a href="https://github.com/Ayush-0023/Spam-Detection-Complete-Pipeline-MLOps" target="_blank"
-                class="project-card project-card--featured">
+            <div class="project-card project-card--featured">
 
-                <img src="images/SMS spam classification complete pipeline using MLOps.png"
-                    alt="SMS spam classification MLOps pipeline" loading="lazy">
+                <img class="img-contain" src="images/Kidney-Disease-Classification.png"
+                    alt="Kidney Disease Classification CNN pipeline" loading="lazy">
 
                 <div class="project-content">
                     <span class="featured-badge">Featured</span>
-                    <h3>💬 SMS Spam Classification — Complete MLOps Pipeline</h3>
+                    <h3>🩺 Kidney Disease Classification - CNN with Transfer Learning, MLflow & DVC</h3>
+
+                    <p>
+                        End-to-end deep learning pipeline classifying kidney CT scans (Normal/Tumor) using transfer
+                        learning on VGG16. Built with a modular, config-driven architecture (YAML-based configuration
+                        manager, typed entity classes, separated components/pipeline stages). Systematically tuned
+                        hyperparameters via DVC-tracked experiments — improving evaluation accuracy from 69% to
+                        <strong>91.1%</strong> by diagnosing and fixing an unstable learning rate. Experiment
+                        tracking and model registry via MLflow + DagsHub. Served through a Flask app, containerised
+                        with Docker, and validated with local end-to-end predictions.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>TensorFlow/Keras</span>
+                        <span>VGG16</span>
+                        <span>DVC</span>
+                        <span>MLflow</span>
+                        <span>DagsHub</span>
+                        <span>Flask</span>
+                        <span>Docker</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Ayush-0023/Kidney-Disease-Classification" target="_blank"
+                            class="project-btn project-btn--github">
+                            GitHub Repo
+                        </a>
+                        <a href="https://drive.google.com/file/d/1qQ-TppQdG7UtTkr-O58fFK95UHBN-QqS/view?usp=sharing"
+                            target="_blank" class="project-btn project-btn--demo">
+                            Watch Demo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <img src="images/SMS spam classification complete pipeline using MLOps.png"
+                    alt="SMS spam classification" loading="lazy">
+
+                <div class="project-content">
+                    <h3>💬 SMS Spam Classification - Complete MLOps Pipeline</h3>
 
                     <p>
                         Production-style pipeline for SMS spam classification: modular preprocessing, TF-IDF feature
-                        engineering, and a Random Forest classifier achieving <strong>[X]% accuracy</strong> on the
+                        engineering, and a Random Forest classifier achieving <strong>94.5% accuracy</strong> on the
                         held-out test set. Pipeline stages are automated with DVC, experiments tracked with DVCLive,
                         and model artifacts versioned to AWS S3.
                     </p>
@@ -264,9 +261,20 @@
                         <span>AWS S3</span>
                         <span>Streamlit</span>
                     </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Ayush-0023/Spam-Detection-Complete-Pipeline-MLOps" target="_blank"
+                            class="project-btn project-btn--github">
+                            GitHub Repo
+                        </a>
+                        <a href="GOOGLE_DRIVE_LINK" target="_blank"
+                            class="project-btn project-btn--demo">
+                            Watch Demo
+                        </a>
+                    </div>
                 </div>
 
-            </a>
+            </div>
 
             <a href="https://github.com/Ayush-0023/Movie-Recommender-System" target="_blank" class="project-card">
 
@@ -299,7 +307,7 @@
 
                     <p>
                         Regression model predicting used car prices from company, model, fuel type, year, and
-                        kilometers driven, achieving an R² of <strong>[X]</strong> on test data.
+                        kilometers driven, achieving an R² of <strong>0.83</strong> on test data.
                     </p>
 
                     <div class="tech-stack">
@@ -315,8 +323,56 @@
         </div>
 
         <p class="more-projects">
-            More projects and experiments on <a href="https://github.com/Ayush-0023" target="_blank">GitHub →</a>
+            More projects on <a href="https://github.com/Ayush-0023" target="_blank">GitHub →</a>
         </p>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Hindustan Zinc Limited (Vedanta Group)</h3>
+                <span>Graduate Engineer Trainee, Shaft Department • September 2025 - February 2026</span>
+                <p>
+                    Coordinated daily work allocation and maintenance planning for a 40-member team across shaft and
+                    hoisting operations. Prepared and presented monthly performance reports to senior management,
+                    tracking KPIs such as ore hoisted (tonnes/day, tonnes/week) against targets. Built departmental
+                    budgets and shutdown/replacement planning for critical machinery, working extensively in Excel
+                    and PowerPoint for data reporting, trend tracking, and forecasting.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Birla Institute of Technology, Mesra</h3>
+                <span>B.Tech in Mechanical Engineering • 2021 - 2025</span>
+                <p>
+                    Ranchi, Jharkhand • CGPA: 7.94 / 10
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Loyola School</h3>
+                <span>Higher Secondary Education (ISC) • 2020</span>
+                <p>
+                    Jamshedpur, Jharkhand • Percentage: 92%
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Loyola School</h3>
+                <span>Secondary Education (ICSE) • 2018</span>
+                <p>
+                    Jamshedpur, Jharkhand • Percentage: 92%
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="contact">

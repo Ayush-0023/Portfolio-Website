@@ -1,9 +1,9 @@
 new Typed('#typed', {
     strings: [
-        'Data Analytics & Machine Learning',
-        'Statistics & Probability Enthusiast',
-        'Machine Learning from First Principles',
-        'Turning Data into Insights'
+        'From Bayes\' Theorem to production pipelines',
+        'Debugging models, not just training them',
+        'CNNs, MLOps, and everything between',
+        'Six months of shift work, now shipping ML'
     ],
     typeSpeed: 55,
     backSpeed: 30,
@@ -195,6 +195,7 @@ function animate() {
     });
 
     connectParticles();
+    mouseEffect();
 
     requestAnimationFrame(animate);
 }
