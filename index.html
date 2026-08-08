@@ -241,11 +241,54 @@
 
             <div class="project-card">
 
+                <img class="img-contain" src="images/Signature-Recognition.png"
+                    alt="Signature Recognition forgery detection pipeline" loading="lazy">
+
+                <div class="project-content">
+                    <h3>✍️ Signature Forgery Detection — ResNet-34, FastAPI & DVC</h3>
+
+                    <p>
+                        Binary image classifier (Forged vs. Original) built on a pretrained ResNet-34 in PyTorch, served
+                        through a FastAPI inference API, with DVC-driven pipeline reproducibility and MLflow + DagsHub
+                        experiment tracking. Test accuracy reached the 90s–100% range — a result I treated as a signal
+                        to
+                        investigate rather than celebrate, since the random image-level split likely lets a writer's
+                        signatures leak across train/test; a writer-independent split is the next step. Containerised
+                        with
+                        Docker for local deployment.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>ResNet-34</span>
+                        <span>FastAPI</span>
+                        <span>DVC</span>
+                        <span>MLflow</span>
+                        <span>Docker</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Ayush-0023/Signature-Recognition" target="_blank"
+                            class="project-btn project-btn--github">
+                            GitHub Repo
+                        </a>
+                        <a href="https://drive.google.com/file/d/1SAuDdnmir4sv0__Xj0OFcoBXbuBjH63r/view?usp=sharing" target="_blank"
+                            class="project-btn project-btn--demo">
+                            Watch Demo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
                 <img src="images/SMS spam classification complete pipeline using MLOps.png"
                     alt="SMS spam classification" loading="lazy">
 
                 <div class="project-content">
-                    <h3>💬 SMS Spam Classification - Complete MLOps Pipeline</h3>
+                    <h3>💬 SMS Spam Classification — Complete MLOps Pipeline</h3>
 
                     <p>
                         Production-style pipeline for SMS spam classification: modular preprocessing, TF-IDF feature
@@ -267,7 +310,7 @@
                             class="project-btn project-btn--github">
                             GitHub Repo
                         </a>
-                        <a href="GOOGLE_DRIVE_LINK" target="_blank"
+                        <a href="PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank"
                             class="project-btn project-btn--demo">
                             Watch Demo
                         </a>
@@ -276,7 +319,7 @@
 
             </div>
 
-            <a href="https://github.com/Ayush-0023/Movie-Recommender-System" target="_blank" class="project-card">
+            <div class="project-card">
 
                 <img src="images/Movie Recommender System.png" alt="Movie Recommender System" loading="lazy">
 
@@ -284,8 +327,13 @@
                     <h3>🎬 Movie Recommender System</h3>
 
                     <p>
-                        Content-based movie recommendation engine using NLP and cosine similarity on the TMDB 5000
-                        dataset, deployed as an interactive Streamlit app.
+                        Content-based movie recommendation engine built on the TMDB 5000 dataset. Combines genre,
+                        keyword,
+                        cast, crew, and overview metadata into a single feature set, processes it through NLP
+                        preprocessing
+                        (tokenization, stemming) and Bag-of-Words vectorization, then ranks movies by cosine similarity
+                        to
+                        surface the top 5 closest matches. Deployed as an interactive Streamlit app.
                     </p>
 
                     <div class="tech-stack">
@@ -294,32 +342,19 @@
                         <span>Scikit-Learn</span>
                         <span>Streamlit</span>
                     </div>
-                </div>
 
-            </a>
-
-            <a href="https://github.com/Ayush-0023/Car-Price-Predictor" target="_blank" class="project-card">
-
-                <img src="images/Car Price Predictor.png" alt="Car Price Predictor" loading="lazy">
-
-                <div class="project-content">
-                    <h3>🚗 Car Price Predictor</h3>
-
-                    <p>
-                        Regression model predicting used car prices from company, model, fuel type, year, and
-                        kilometers driven, achieving an R² of <strong>0.83</strong> on test data.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Scikit-Learn</span>
-                        <span>Regression</span>
+                    <div class="project-links">
+                        <a href="https://github.com/Ayush-0023/Movie-Recommender-System" target="_blank"
+                            class="project-btn project-btn--github">
+                            GitHub Repo
+                        </a>
+                        <a href="https://drive.google.com/file/d/1VQCesZq9_lTUpYz-6OOGUm2VQa-h6xAf/view?usp=sharing"
+                            target="_blank" class="project-btn project-btn--demo">
+                            Watch Demo
+                        </a>
                     </div>
                 </div>
-
-            </a>
-
+            </div>
         </div>
 
         <p class="more-projects">
