@@ -291,17 +291,19 @@
                     <h3>💬 SMS Spam Classification — Complete MLOps Pipeline</h3>
 
                     <p>
-                        Production-style pipeline for SMS spam classification: modular preprocessing, TF-IDF feature
-                        engineering, and a Random Forest classifier achieving <strong>94.5% accuracy</strong> on the
-                        held-out test set. Pipeline stages are automated with DVC, experiments tracked with DVCLive,
-                        and model artifacts versioned to AWS S3.
+                        Compared 10+ classification algorithms during experimentation before selecting
+                        Multinomial Naive Bayes with 3,000 TF-IDF features, reaching <strong>97.1% accuracy</strong>,
+                        100% precision, and 98.2% ROC-AUC on the held-out test set. Pipeline stages are automated
+                        with DVC, experiments tracked with DVCLive, and predictions served in real time through
+                        a Streamlit app.
                     </p>
 
                     <div class="tech-stack">
                         <span>Python</span>
                         <span>NLP</span>
+                        <span>Naive Bayes</span>
                         <span>DVC</span>
-                        <span>AWS S3</span>
+                        <span>DVCLive</span>
                         <span>Streamlit</span>
                     </div>
 
@@ -310,8 +312,8 @@
                             class="project-btn project-btn--github">
                             GitHub Repo
                         </a>
-                        <a href="https://drive.google.com/file/d/17KePGxTQ6PHVBBnVU5DoSu9KRCi_kNim/view?usp=sharing" target="_blank"
-                            class="project-btn project-btn--demo">
+                        <a href="https://drive.google.com/file/d/17KePGxTQ6PHVBBnVU5DoSu9KRCi_kNim/view?usp=sharing"
+                            target="_blank" class="project-btn project-btn--demo">
                             Watch Demo
                         </a>
                     </div>
