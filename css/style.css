@@ -410,12 +410,6 @@ section {
     background: rgba(255, 255, 255, 0.03);
 }
 
-.project-card img.img-contain {
-    object-fit: scale-down;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 1rem;
-}
-
 .project-card:hover img {
     transform: scale(1.05);
 }
