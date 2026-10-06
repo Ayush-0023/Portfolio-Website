@@ -31,42 +31,30 @@ body::before {
 
     background:
 
-        radial-gradient(
-            circle at 10% 15%,
+        radial-gradient(circle at 10% 15%,
             rgba(255, 0, 128, 0.20),
-            transparent 30%
-        ),
+            transparent 30%),
 
-        radial-gradient(
-            circle at 85% 20%,
+        radial-gradient(circle at 85% 20%,
             rgba(0, 212, 255, 0.18),
-            transparent 30%
-        ),
+            transparent 30%),
 
-        radial-gradient(
-            circle at 80% 80%,
+        radial-gradient(circle at 80% 80%,
             rgba(108, 99, 255, 0.20),
-            transparent 35%
-        ),
+            transparent 35%),
 
-        radial-gradient(
-            circle at 20% 80%,
+        radial-gradient(circle at 20% 80%,
             rgba(0, 255, 170, 0.12),
-            transparent 35%
-        ),
+            transparent 35%),
 
-        radial-gradient(
-            circle at 50% 50%,
+        radial-gradient(circle at 50% 50%,
             rgba(255, 170, 0, 0.08),
-            transparent 40%
-        ),
+            transparent 40%),
 
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #050816 0%,
             #090d1f 50%,
-            #050816 100%
-        );
+            #050816 100%);
 
     z-index: -2;
 
@@ -390,7 +378,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -415,9 +403,11 @@ section {
 
 .project-card img {
     width: 100%;
-    height: 240px;
-    object-fit: cover;
-    transition: 0.4s ease;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .project-card img.img-contain {
@@ -430,7 +420,7 @@ section {
     transform: scale(1.05);
 }
 
-.project-card--featured {
+/* .project-card--featured {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1.1fr 1fr;
@@ -459,7 +449,7 @@ section {
     padding: 0.3rem 0.8rem;
     border-radius: 999px;
     margin-bottom: 0.8rem;
-}
+} */
 
 .project-content {
     padding: 1.5rem;
@@ -666,13 +656,17 @@ footer {
         padding: 6rem 1.5rem;
     }
 
-    .project-card--featured {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* .project-card--featured {
         grid-template-columns: 1fr;
     }
 
     .project-card--featured img {
         height: 240px;
-    }
+    } */
 }
 
 @media(max-width: 600px) {

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayush Anand | Data Science & Machine Learning Portfolio</title>
+    <title>Ayush Anand | Machine Learning Engineer Portfolio</title>
     <meta name="description"
-        content="Ayush Anand — Data Science & Machine Learning portfolio. Projects in NLP, MLOps, and predictive modelling, built on a foundation in statistics and first-principles thinking.">
-    <meta property="og:title" content="Ayush Anand | Data Science & Machine Learning Portfolio">
+        content="Ayush Anand - Machine Learning Engineer portfolio. End-to-end projects in deep learning, Generative AI (RAG, LangGraph), and MLOps, built on a foundation in classical ML and first-principles thinking.">
+    <meta property="og:title" content="Ayush Anand | Machine Learning Engineer Portfolio">
     <meta property="og:description"
-        content="Projects in NLP, MLOps, and predictive modelling, built on a foundation in statistics and first-principles thinking.">
+        content="End-to-end projects in deep learning, Generative AI (RAG, LangGraph), and MLOps, built on a foundation in classical ML and first-principles thinking.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="https://drive.google.com/file/d/1YrqqJQenFUWV387JaoDlP7AjlzWVvdaZ/view?usp=drive_link"
+                <a href="https://drive.google.com/file/d/1CgFRUievGsN1fh3GJf5gN_k3NT4Y8yAz/view?usp=drive_link"
                     class="btn btn-primary" target="_blank">
                     View Resume
                 </a>
@@ -106,9 +106,11 @@
                     taught me more than any tutorial could.
                     <br><br>
                     I came into ML from mechanical engineering, including six months running a maintenance team at an
-                    industrial plant - not a typical background for this field, but one that left me comfortable
-                    making decisions from incomplete data under real operational pressure. I'm now looking for a
-                    team where I can keep building toward production ML systems: the kind with a Docker container
+                    industrial plant - not a typical background for this field, but one that directly shaped what I
+                    build. My Industrial Maintenance Copilot project exists because of that experience: a RAG system
+                    that answers equipment questions straight from real manuals, with built-in verification against
+                    the source text, is the kind of tool I would have genuinely used underground. I'm now looking for
+                    a team where I can keep building toward production ML systems: the kind with a Docker container
                     and a reproducible pipeline behind them, not just a notebook.
                 </p>
             </div>
@@ -118,39 +120,34 @@
     <section id="skills">
         <h2 class="section-title">Skills</h2>
         <p class="section-subtitle">
-            Technical strengths spanning classical machine learning, model evaluation and tuning, and hands-on
-            MLOps tooling.
+            Technical strengths spanning classical machine learning, deep learning, Generative AI, and
+            hands-on MLOps tooling.
         </p>
 
         <div class="skills-grid">
             <div class="skill-card">
-                <h3>Regression & Regularisation</h3>
+                <h3>Machine Learning</h3>
                 <p>
-                    Linear, Polynomial, Ridge, Lasso, and ElasticNet regression — including the underlying OLS and
-                    gradient descent derivations, and why L1 induces sparsity while L2 doesn't.
+                    Regression, Classification, Naive Bayes, KNN, SVM, Decision Trees, Ensemble Methods (Random Forest,
+                    AdaBoost, Gradient Boosting, XGBoost, LightGBM), Clustering (K-Means, Hierarchical,
+                    DBSCAN), PCA, and Feature Engineering.
                 </p>
             </div>
 
             <div class="skill-card">
-                <h3>Classification Algorithms</h3>
+                <h3>Deep Learning</h3>
                 <p>
-                    Logistic & Softmax Regression, Naive Bayes, KNN, SVM (linear, polynomial, RBF kernels), and
-                    Decision Trees, with a working understanding of the math behind each.
+                    Neural Networks (MLP, CNN) and Transfer Learning (VGG16, ResNet-34) for image
+                    classification, built with TensorFlow, Keras, and PyTorch.
                 </p>
             </div>
 
             <div class="skill-card">
-                <h3>Ensemble Methods</h3>
+                <h3>Generative AI & Agentic AI</h3>
                 <p>
-                    Random Forest, AdaBoost, Gradient Boosting, XGBoost, LightGBM, and Voting/Stacking/Blending —
-                    including the bias-variance reasoning behind bagging vs. boosting.
-                </p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Unsupervised Learning</h3>
-                <p>
-                    K-Means, Hierarchical (Agglomerative) Clustering, DBSCAN, and PCA for dimensionality reduction.
+                    LangChain (RAG pipelines, tool-calling agents) and LangGraph for stateful agent
+                    workflows, prompt engineering, vector databases (FAISS, Chroma), and OpenAI, Anthropic,
+                    and HuggingFace APIs.
                 </p>
             </div>
 
@@ -173,8 +170,9 @@
             <div class="skill-card">
                 <h3>MLOps & Pipelines</h3>
                 <p>
-                    DVC + DVCLive for data versioning and experiment tracking, Docker for containerisation, AWS S3
-                    for remote artifact storage, and config-driven (YAML) pipeline design.
+                    DVC + DVCLive for pipeline automation and experiment tracking, MLflow + DagsHub for
+                    experiment tracking and model registry, Docker for containerisation, and Flask/FastAPI
+                    for model serving.
                 </p>
             </div>
 
@@ -190,26 +188,66 @@
     <section id="projects">
         <h2 class="section-title">Projects</h2>
         <p class="section-subtitle">
-            A selection of projects spanning deep learning, MLOps pipelines, NLP, and predictive
-            modelling.
+            A selection of projects spanning Generative AI, deep learning, MLOps pipelines, and
+            predictive modelling.
         </p>
 
         <div class="projects-grid">
 
-            <div class="project-card project-card--featured">
+            <div class="project-card">
+
+                <img class="img-contain" src="images/Industrial-Maintenance-Copilot.jpg"
+                    alt="Industrial Maintenance Copilot RAG and LangGraph pipeline" loading="lazy">
+
+                <div class="project-content">
+                    <h3>🛠️ Industrial Maintenance Copilot - RAG + LangGraph Self-Verification</h3>
+
+                    <p>
+                        A RAG-based assistant that answers industrial maintenance questions from real
+                        equipment manuals, grounding every answer in cited manual excerpts with exact
+                        page numbers. Built a LangGraph workflow that adds a self-verification step - a
+                        second LLM pass checks whether the generated answer's claims are actually
+                        supported by the retrieved passages, and routes to a safety fallback message
+                        rather than presenting unverified advice as reliable. Deployed as a Streamlit
+                        app surfacing the evidence-check result alongside full source citations and
+                        retrieval scores.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>LangChain</span>
+                        <span>LangGraph</span>
+                        <span>ChromaDB</span>
+                        <span>HuggingFace</span>
+                        <span>Streamlit</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Ayush-0023/Industrial-Maintenance-Copilot" target="_blank"
+                            class="project-btn project-btn--github">
+                            GitHub Repo
+                        </a>
+                        <a href="GOOGLE_DRIVE_LINK" target="_blank" class="project-btn project-btn--demo">
+                            Watch Demo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-card">
 
                 <img class="img-contain" src="images/Kidney-Disease-Classification.jpg"
                     alt="Kidney Disease Classification CNN pipeline" loading="lazy">
 
                 <div class="project-content">
-                    <span class="featured-badge">Featured</span>
                     <h3>🩺 Kidney Disease Classification - CNN with Transfer Learning, MLflow & DVC</h3>
 
                     <p>
                         End-to-end deep learning pipeline classifying kidney CT scans (Normal/Tumor) using transfer
                         learning on VGG16. Built with a modular, config-driven architecture (YAML-based configuration
                         manager, typed entity classes, separated components/pipeline stages). Systematically tuned
-                        hyperparameters via DVC-tracked experiments — improving evaluation accuracy from 69% to
+                        hyperparameters via DVC-tracked experiments - improving evaluation accuracy from 69% to
                         <strong>91.1%</strong> by diagnosing and fixing an unstable learning rate. Experiment
                         tracking and model registry via MLflow + DagsHub. Served through a Flask app, containerised
                         with Docker, and validated with local end-to-end predictions.
@@ -246,17 +284,15 @@
                     alt="Signature Recognition forgery detection pipeline" loading="lazy">
 
                 <div class="project-content">
-                    <h3>✍️ Signature Forgery Detection — ResNet-34, FastAPI & DVC</h3>
+                    <h3>✍️ Signature Forgery Detection - ResNet-34, FastAPI & DVC</h3>
 
                     <p>
                         Binary image classifier (Forged vs. Original) built on a pretrained ResNet-34 in PyTorch, served
                         through a FastAPI inference API, with DVC-driven pipeline reproducibility and MLflow + DagsHub
-                        experiment tracking. Test accuracy reached the 90s–100% range — a result I treated as a signal
-                        to
-                        investigate rather than celebrate, since the random image-level split likely lets a writer's
+                        experiment tracking. Test accuracy reached the 90s–100% range - a result I treated as a signal
+                        to investigate rather than celebrate, since the random image-level split likely lets a writer's
                         signatures leak across train/test; a writer-independent split is the next step. Containerised
-                        with
-                        Docker for local deployment.
+                        with Docker for local deployment.
                     </p>
 
                     <div class="tech-stack">
@@ -289,7 +325,7 @@
                     alt="SMS spam classification" loading="lazy">
 
                 <div class="project-content">
-                    <h3>💬 SMS Spam Classification — Complete MLOps Pipeline</h3>
+                    <h3>💬 SMS Spam Classification - Complete MLOps Pipeline</h3>
 
                     <p>
                         Compared 10+ classification algorithms during experimentation before selecting
@@ -322,42 +358,6 @@
 
             </div>
 
-            <div class="project-card">
-
-                <img src="images/Movie-Recommender-System.jpg" alt="Movie Recommender System" loading="lazy">
-
-                <div class="project-content">
-                    <h3>🎬 Movie Recommender System</h3>
-
-                    <p>
-                        Content-based movie recommendation engine built on the TMDB 5000 dataset. Combines genre,
-                        keyword,
-                        cast, crew, and overview metadata into a single feature set, processes it through NLP
-                        preprocessing
-                        (tokenization, stemming) and Bag-of-Words vectorization, then ranks movies by cosine similarity
-                        to
-                        surface the top 5 closest matches. Deployed as an interactive Streamlit app.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>NLP</span>
-                        <span>Scikit-Learn</span>
-                        <span>Streamlit</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://github.com/Ayush-0023/Movie-Recommender-System" target="_blank"
-                            class="project-btn project-btn--github">
-                            GitHub Repo
-                        </a>
-                        <a href="https://drive.google.com/file/d/1VQCesZq9_lTUpYz-6OOGUm2VQa-h6xAf/view?usp=sharing"
-                            target="_blank" class="project-btn project-btn--demo">
-                            Watch Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <p class="more-projects">
@@ -368,19 +368,22 @@
     <section id="experience">
         <h2 class="section-title">Experience</h2>
 
-        <div class="timeline-item">
-            <h3>Hindustan Zinc Limited (Vedanta Group)</h3>
-            <span>Graduate Engineer Trainee, Shaft Department • September 2025 - February 2026</span>
-            <ul class="timeline-list">
-                <li>Led the replacement of skip E1, E2, and E3 tail ropes in 6 days, cutting the prior 9–12 day
-                    benchmark by roughly 50% while maintaining quality and safety standards.</li>
-                <li>Improved shaft availability from 75% to a sustained ~79% (19 hrs/day) over a 3-month period by
-                    identifying and reducing recurring breakdown causes.</li>
-                <li>Collected and analyzed daily shaft production and downtime data to prepare MIS reports and inform
-                    improvement plans - early hands-on data analysis work.</li>
-                <li>Coordinated daily work allocation and maintenance planning across a 40-member team, alongside
-                    monthly performance reporting to senior management.</li>
-            </ul>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Hindustan Zinc Limited (Vedanta Group)</h3>
+                <span>Graduate Engineer Trainee, Shaft Department • September 2025 - February 2026</span>
+                <ul class="timeline-list">
+                    <li>Led the replacement of skip E1, E2, and E3 tail ropes in 6 days, cutting the prior 12 days
+                        benchmark by roughly 50% while maintaining quality and safety standards.</li>
+                    <li>Improved shaft availability from 75% to a sustained ~79% (19 hrs/day) over a 3-month period by
+                        identifying and reducing recurring breakdown causes.</li>
+                    <li>Collected and analyzed daily shaft production and downtime data to prepare MIS reports and
+                        inform
+                        improvement plans - early hands-on data analysis work.</li>
+                    <li>Coordinated daily work allocation and maintenance planning across a 40-member team, alongside
+                        monthly performance reporting to senior management.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
