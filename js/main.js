@@ -2,6 +2,7 @@ new Typed('#typed', {
     strings: [
         'From Bayes\' Theorem to production pipelines',
         'Debugging models, not just training them',
+        'RAG pipelines that know what they don\'t know',
         'CNNs, MLOps, and everything between',
         'Six months of shift work, now shipping ML'
     ],
